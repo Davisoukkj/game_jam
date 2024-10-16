@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct53ijyo7w2sw"]
+
+[ext_resource type="PackedScene" uid="uid://d1kbot3hajerj" path="res://Scenes/character.tscn" id="1_4ng1g"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.732018, -0.798683, -0.644622)
+use_collision = true
+size = Vector3(30, 1.11397, 26)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_4ng1g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.134794, -1.73618)
+sensitivity = 2.5
+mouse_sensitivity = 0.2
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.44041, 1.32039, -3.84088)
+use_collision = true
+size = Vector3(10.4221, 0.834251, 0.980095)
